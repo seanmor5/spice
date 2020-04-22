@@ -1,2 +1,3 @@
-# spice
-My private research repository
+# Spice
+
+> He who controls the Spice, controls the universe!
