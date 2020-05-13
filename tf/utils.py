@@ -26,3 +26,12 @@ def decode_image(path, img_height=512, img_width=512, channels=3):
   img = tf.image.decode_jpeg(img, channels=channels) # TODO: support different images
   img = tf.image.convert_image_dtype(img, dtype=tf.float32)
   return tf.image.resize(img, [img_height, img_width])
+
+def use_tpu(tpu_addr):
+  resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='grpc://' + tpu_addr)
+  tf.config.experimental_connect_to_cluster(resolver)
+  # This is the TPU initialization code that has to be at the beginning.
+  tf.tpu.experimental.initialize_tpu_system(resolver)
+  strategy = tf.distribute.experimental.TPUStrategy(resolver)
+  return strategy
+
