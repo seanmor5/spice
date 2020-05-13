@@ -17,6 +17,7 @@ Implementations from: [Deviation Networks](https://arxiv.org/abs/1911.08623)
 
 * `deviation`
 * `z_loss`
+* `wasserstein_loss`
 
 ## Utils
 

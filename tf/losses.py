@@ -29,5 +29,5 @@ def z_loss(confidence_margin=5.)
 
   return _loss
 
-def wasserstein_loss():
-  return
+def wasserstein_loss(y_true, y_pred):
+  return tf.math.reduce_mean(y_true * y_pred)
