@@ -16,8 +16,12 @@ Implementations from: [LOGAN](https://arxiv.org/abs/1912.00953)
 Implementations from: [Deviation Networks](https://arxiv.org/abs/1911.08623)
 
 * `deviation`
-* `z_loss`
+* `z_score_loss`
 * `wasserstein_loss`
+
+## Metrics
+
+* `z_score_accuracy`
 
 ## Utils
 
