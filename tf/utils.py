@@ -30,8 +30,12 @@ def decode_image(path, img_height=512, img_width=512, channels=3):
 def use_tpu(tpu_addr):
   resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='grpc://' + tpu_addr)
   tf.config.experimental_connect_to_cluster(resolver)
-  # This is the TPU initialization code that has to be at the beginning.
   tf.tpu.experimental.initialize_tpu_system(resolver)
   strategy = tf.distribute.experimental.TPUStrategy(resolver)
   return strategy
 
+# data echoing from the paper: https://arxiv.org/pdf/1907.05550.pdf
+# on I/O heavy workloads this speeds up training time
+# echoing should be done BEFORE augmentation, then it's like new data
+def echo(ds, e=1):
+  return ds.flat_map(lambda t: tf.data.Dataset.from_tensors(t).repeat(e))
