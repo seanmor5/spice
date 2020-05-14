@@ -25,6 +25,10 @@ Implementations from: [Deviation Networks](https://arxiv.org/abs/1911.08623)
 
 ## Utils
 
+Implementations from: [Faster Training with Data Echoing](https://arxiv.org/pdf/1907.05550.pdf)
+
+* `echo`
+
 Just random helper stuff
 
 * `prepare_dataset`

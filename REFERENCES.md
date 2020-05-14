@@ -6,6 +6,7 @@ So I don't have to bookmark things.
 
 - [LOGAN](https://arxiv.org/abs/1912.00953)
 - [Deviation Networks](https://arxiv.org/abs/1911.08623)
+- [Faster Training with Data Echoing](https://arxiv.org/pdf/1907.05550.pdf)
 
 ## Books
 
