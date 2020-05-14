@@ -34,4 +34,3 @@ Just random helper stuff
 * `prepare_dataset`
 * `decode_image`
 * `use_tpu`
-* `echo`
