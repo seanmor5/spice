@@ -17,6 +17,9 @@ Implementations from: [Deviation Networks](https://arxiv.org/abs/1911.08623)
 
 * `deviation`
 * `z_score_loss`
+
+Implementations from: [Wasserstein GAN](https://arxiv.org/abs/1701.07875)
+
 * `wasserstein_loss`
 
 ## Metrics
