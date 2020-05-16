@@ -4,6 +4,13 @@
 
 This is just random stuff I save so I don't have to rewrite it later.
 
+## Layers
+
+Implementations from: [U-Net](https://arxiv.org/pdf/1505.04597.pdf), see also: [https://www.tensorflow.org/tutorials/generative/pix2pix](Pix2Pix)
+
+* `UNetEncoderBlock`
+* `UNetDecoderBlock`
+
 ## GAN
 
 Implementations from: [LOGAN](https://arxiv.org/abs/1912.00953)
