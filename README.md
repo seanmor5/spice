@@ -6,7 +6,7 @@ This is just random stuff I save so I don't have to rewrite it later.
 
 ## Layers
 
-Implementations from: [U-Net](https://arxiv.org/pdf/1505.04597.pdf), see also: [https://www.tensorflow.org/tutorials/generative/pix2pix](Pix2Pix)
+Implementations from: [U-Net](https://arxiv.org/pdf/1505.04597.pdf), see also: [Pix2Pix](https://www.tensorflow.org/tutorials/generative/pix2pix)
 
 * `UNetEncoderBlock`
 * `UNetDecoderBlock`
